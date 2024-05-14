@@ -478,11 +478,11 @@ https://www.tooplate.com/view/2119-gymso-fitness
   -----------------------------------------*/
 
   .projects {
-    background: var(--dark-color);
+    background: var(--white-color);
   }
 
   .projects h2 {
-    color: var(--white-color);
+    color: var(--dark-color);
   }
 
   
