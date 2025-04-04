@@ -131,3 +131,54 @@ function importFromXML() {
   };
   reader.readAsText(file);
 }
+function addItem(name = null, value = 0, step = 1) {
+  const input = document.getElementById('itemInput');
+  const itemList = document.getElementById('itemList');
+  const itemName = name ? name : input.value.trim();
+  if (!itemName) {
+    alert('Please enter a commodity name!');
+    return;
+  }
+
+  const li = document.createElement('li');
+  li.className = 'item';
+
+  const nameSpan = document.createElement('span');
+  nameSpan.textContent = itemName;
+
+  const valueInput = document.createElement('input');
+  valueInput.type = 'number';
+  valueInput.value = value;
+
+  const incrementButton = document.createElement('button');
+  incrementButton.textContent = '+';
+  incrementButton.onclick = () => {
+    const stepValue = parseInt(stepInput.value) || 1; // Use step value or default to 1
+    valueInput.value = parseInt(valueInput.value || 0) + stepValue;
+  };
+
+  const decrementButton = document.createElement('button');
+  decrementButton.textContent = '-';
+  decrementButton.onclick = () => {
+    const stepValue = parseInt(stepInput.value) || 1; // Use step value or default to 1
+    valueInput.value = Math.max(0, parseInt(valueInput.value || 0) - stepValue);
+  };
+
+  const stepInput = document.createElement('input');
+  stepInput.type = 'number';
+  stepInput.placeholder = 'Step Value';
+  stepInput.value = step;
+
+  const removeButton = document.createElement('button');
+  removeButton.textContent = 'Remove';
+  removeButton.className = 'removeButton';
+  removeButton.onclick = () => {
+    itemList.removeChild(li);
+  };
+
+  li.append(nameSpan, valueInput, incrementButton, decrementButton, stepInput, removeButton);
+  itemList.appendChild(li);
+
+  if (!name) input.value = ''; // Clear the input field
+}
+
