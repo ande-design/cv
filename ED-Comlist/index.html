@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commodities List</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div id="container">
+    <h1>Commodities List</h1>
+    <div id="inputContainer">
+      <input type="text" id="itemInput" placeholder="Enter commodity" />
+      <button onclick="addItem()">Add Commodity</button>
+    </div>
+    <ul id="itemList"></ul>
+    <div id="exportButton">
+      <button onclick="exportToPNG()">Export to PNG</button>
+      <button onclick="saveList()">Save List</button>
+      <button onclick="loadList()">Load List</button>
+      <button onclick="exportToXML()">Export to XML</button>
+      <button onclick="document.getElementById('fileInput').click()">Import from XML</button>
+      <input type="file" id="fileInput" accept=".xml" onchange="importFromXML()" />
+    </div>
+  </div>
+</body>
+</html>

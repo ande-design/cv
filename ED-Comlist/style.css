@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#inputContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#itemInput {
+  flex: 2;
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 26px;
+}
+
+button {
+  font-size: 16px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.item span {
+  flex: 2;
+}
+
+.item input {
+  flex: 1;
+  margin: 0 40px;
+  padding: 5px;
+  text-align: center;
+  font-size: medium;
+}
+
+.item button {
+  flex: 0.5;
+  margin-left: 5px;
+}
+
+.removeButton {
+  background-color: #FF8700;
+}
+
+button:hover {
+  background-color: #FF8700;
+}
+
+#exportButton {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#fileInput {
+  display: none;
+}
