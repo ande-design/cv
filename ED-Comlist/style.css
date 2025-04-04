@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Avenir+Next+Condensed:wght@400;700&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Avenir Next Condensed', Arial, sans-serif;
   background-color: black;
   color: white;
   margin: 0;
@@ -56,6 +58,9 @@ ul {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
+  white-space: nowrap; /* Prevent double-lining */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis for long content */
 }
 
 .item span {
@@ -70,20 +75,20 @@ ul {
   font-size: medium;
 }
 
-/* Styles specific to + and - buttons */
-.item button {
-  width: 30px; /* Square shape for + and - buttons */
-  height: 30px; /* Square shape for + and - buttons */
+/* Apply square shape specifically to + and - buttons */
+.item button:not(.removeButton) {
+  width: 30px;
+  height: 30px;
   margin-left: 5px;
 }
 
-/* Restore original styles for Remove button */
+/* Restore original styles for the Remove button */
 .item .removeButton {
   background-color: #FF8700;
-  font-size: 16px; /* Restore original font size */
-  padding: 5px; /* Restore original padding */
-  width: auto; /* Ensure it adjusts to content */
-  height: auto; /* Ensure it adjusts to content */
+  font-size: 16px;
+  padding: 5px;
+  width: auto; /* Adjust to content */
+  height: auto; /* Adjust to content */
 }
 
 button:hover {
