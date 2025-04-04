@@ -32,6 +32,8 @@ h1 {
   margin-right: 10px;
   padding: 5px;
   font-size: 26px;
+  font-weight: bold;
+  width: 300px; /* Reduced width */
 }
 
 button {
@@ -68,13 +70,20 @@ ul {
   font-size: medium;
 }
 
+/* Styles specific to + and - buttons */
 .item button {
-  flex: 0.5;
+  width: 30px; /* Square shape for + and - buttons */
+  height: 30px; /* Square shape for + and - buttons */
   margin-left: 5px;
 }
 
-.removeButton {
+/* Restore original styles for Remove button */
+.item .removeButton {
   background-color: #FF8700;
+  font-size: 16px; /* Restore original font size */
+  padding: 5px; /* Restore original padding */
+  width: auto; /* Ensure it adjusts to content */
+  height: auto; /* Ensure it adjusts to content */
 }
 
 button:hover {
