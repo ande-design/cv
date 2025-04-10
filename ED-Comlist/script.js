@@ -1,9 +1,20 @@
+
 const predefinedEntries = [
-  "Aluminium", "Ceramic Composites", "CMM Composite", "Computer Components",
-  "Copper", "Food Cartridges", "Fruit and Vegetables", "Insulating Membrane",
-  "Liquid oxygen", "Medical Diagnostic Equipment", "Non-Lethal Weapons",
-  "Polymers", "Power Generators", "Semiconductors", "Steel",
-  "Superconductors", "Titanium", "Water", "Water Purifiers"
+  "Aluminium", 
+  "Biowaste", "Bioreducing Lichen", "Building Fabricators",
+  "Ceramic Composites", "CMM Composite", "Computer Components", "Copper", "Crop Harvesters", "Emergency Power Cells", 
+  "Evacuation Shelter", 
+  "Food Cartridges", "Fruit and Vegetables", 
+  "Geological Equipment", "Grain", 
+  "H.E. Suits", 
+  "Insulating Membrane",
+  "Liquid oxygen", "Land Enrichment Systems",
+  "Medical Diagnostic Equipment", "Muon Imager", "Non-Lethal Weapons", 
+  "Pesticides", "Polymers", "Power Generators", 
+  "Robotics", 
+  "Semiconductors", "Steel", "Superconductors", "Structural Regulators", "Surface Stabilisers", "Survival Equipment",
+  "Titanium", 
+  "Water", "Water Purifiers"
 ];
 
 window.onload = () => {
